@@ -1,13 +1,61 @@
+<!-- Home Page (index.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your App's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StatThor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: #05458a; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .nav-links { display: flex; gap: 20px; }
+        .footer { background:  #05458a; color: white; padding: 20px; text-align: center; }
+        .section { padding: 80px 40px; }
+        .download-buttons a { margin: 10px; }
+        .icon { width: 40px; margin-right: 10px; border-radius: 25%;}
+        .feature-img { width: 100%; max-width: 300px; border-radius: 50px; box-shadow: 3px 3px 10px rgba(0,0,0,0.2); }
+        .feature-text { max-width: 350px; }
+        .row { margin-bottom: 20px; }
+    </style>
 </head>
 <body>
-  <h1>Welcome to StatThor's Website</h1>
-  <p>This site is hosted to serve the app-ads.txt file for AdMob integration.</p>
-  <p>You can access the app-ads.txt file directly at <a href="https://th3-al7ha10.github.io/app-ads/app-ads.txt">app-ads.txt</a></p>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html"><img src="statthor_icon.png" alt="App Icon" class="icon"> StatThor</a>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="section text-center">
+        <h1>Welcome to StatThor</h1>
+        <p>Your all-in-one statistics tool!</p>
+        <div class="download-buttons">
+            <a href="#" class="btn btn-primary">Download on Play Store</a>
+            <a href="#" class="btn btn-warning">Download on App Store</a>
+        </div>
+    </header>
+
+    <section class="section container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6"><img src="Home.png" class="img-fluid feature-img"></div>
+            <div class="col-md-4 feature-text"><h3>Summarize and Visualize</h3><p>StatThor is designed to simplify data analysis by helping you visualize data summaries effortlessly. 
+                With features that include histograms, box-and-whisker plots, and regression lines, you can easily interpret complex data and gain valuable insights. 
+                Transform your data into clear, actionable visuals. Experience the power of data visualization today!</p></div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6 order-md-2"><img src="Regression.png" class="img-fluid feature-img"></div>
+            <div class="col-md-4 order-md-1 feature-text" style="padding-right: 50px;"><h3>Take decision</h3><p>StatThor aims to enhance your decision-making process through advanced statistical tools. 
+                With features like confidence intervals and hypothesis testing, can gain deeper insights and make more informed choices. 
+                Whether you're analyzing data or testing, our app empowers you to approach decisions with confidence and clarity. Take the guesswork out of decision-making and let data guide you!</p></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 StatThor | <a href="privacy-policy.html">Privacy Policy</a> | <a href="eula.html">EULA</a></p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </footer>
 </body>
 </html>
